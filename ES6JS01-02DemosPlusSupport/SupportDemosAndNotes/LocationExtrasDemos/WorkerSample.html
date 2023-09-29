@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<script language="javascript">
+	var w;     <!--WorkerSample.html -->                                                               
+	function startwork()
+	{
+	//	d=new Date();demo_workers
+		//w=new Worker("mywork.js");
+		w=new Worker("demo_workers.js");
+		w.onmessage=function(event)
+		{
+		var myOEle=document.getElementById('myData');
+		var value=parseInt(event.data);
+		myOEle.innerHTML="The Data Given is "+value;
+		
+		}
+	}
+	function stopwork()
+	{
+		w.terminate();
+	}
+	</script>
+	</head>
+	<body>
+		<center>
+			<table border="2" bordercolor="green">
+				<tr>
+					<td>BackgroundWork
+					</td>
+					<td>
+					<output id="myData">output</output>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<button id="startButton" onclick="startwork()">
+					START BACKGROUND WORKER
+					</button>
+					</td>
+					<td>
+					<button id="stopButton" onclick="stopwork()">
+					STOP BACKGROUND WORKER
+					</button>
+					</td>
+				</tr>								
+			</table>
+		</center>
+	</body>
+</html>

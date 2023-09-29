@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<h1>this is in Heading one</h1>
+<img name="myimg" src="abc.gif" />
+<p>this is a paragraph</p>
+</head>
+</html>
+
+-----------------------------------
+Generated HTML
+var ele=document.createElement(p)
+or
+document.addElement(p)
+or
+document.append(p)
+
+var txt=document.createTextElement("this is a paragraph");
+
+var myp=document.getElementByTag(p)
+
+myp.appendChild(txt)
+
+var head1=document.createElement(h1)
+document.append(head1)
+ var headtxt=document.createTextElement("this is in Heading");
+document.append(headtxt);
+----------------------------------------------------
+Fetch Data- Parse
+
+document.getElementById('r1')
+document.getElementByName('rx')
+document.getElementByTag
+var myp=document.getElementByTag(p)
+----------
+var doc=document.getNode();
+doc.myimg.src
+
+------
+<input type="radio" id="r1" name="rx">
+
+<p> asdsd</p>
+
+<h>
+
+<pre>
+
+
+Mar 12 2004
+<p>12-03-2004</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

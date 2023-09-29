@@ -1,0 +1,31 @@
+<html>
+<script>
+function display()
+{
+document.writeln("Student Id is :"+this.studId+"</br>");
+document.writeln("Student Name is :"+this.studName+"</br>");
+document.writeln("Student Address is :"+this.studAddress+"</br>");
+document.writeln("Student Score is :"+this.studScore+"</br>");
+}
+function Student(sId,sName,sAddress,score)
+{
+this.studId=sId;
+this.studName=sName;
+this.studAddress=sAddress;
+this.studScore=score;
+this.disp=display;
+}
+var stud1 = new Student("S001","Harsha","RTNagar",78);
+var stud2 = new Student("S002","Suman","JJNagar",88);
+var stud3 = new Student("S003","Kiran","BRNagar",76);
+stud1.disp();
+stud2.disp();
+stud3.disp();
+
+
+</script>
+</html>
+
+
+
+

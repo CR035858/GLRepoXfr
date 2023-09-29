@@ -1,0 +1,72 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+var Authors=
+{
+"AuthFName":"Williams",
+"AuthLName":"Shakespeare",
+"AuthCity":"London",
+"AuthPhone":"25677373",
+"Novels":
+[
+{
+"TitleId":"T001",
+"Title":"MidSummer Nights Dreams",
+"Publisher":"McMillan Publishers",
+"Price":"$230",
+"Pages":"100"
+},
+{
+"TitleId":"T002",
+"Title":"Hamlet",
+"Publisher":"Oxford Publications",
+"Price":"$330",
+"Pages":"150"
+},
+{
+"TitleId":"T003",
+"Title":"Macbeth",
+"Publisher":"United Publishers",
+"Price":"$430",
+"Pages":"300"
+}
+]
+}
+document.writeln("The Authors Details are </br>");
+document.writeln("The Author First Name :"+Authors['AuthFName']+"</br>");
+document.writeln("The Author Last Name :"+Authors['AuthLName']+"</br>");
+document.writeln("The Author City :"+Authors['AuthCity']+"</br>");
+document.writeln("The Author Phone :"+Authors['AuthPhone']+"</br>");
+
+document.writeln("--------The Titles Penned By the Author are --------------</br>");
+/*document.writeln("The Title ID is :"+Authors['Novels'][0]['TitleId']+"<br>");
+document.writeln("The Title Name is :"+Authors['Novels'][0]['Title']+"<br>");
+document.writeln("The Publisher is :"+Authors['Novels'][0]['Publisher']+"<br>");
+document.writeln("The Price is "+Authors['Novels'][0]['Price']+"<br>");
+document.writeln("The Pages it has : "+Authors['Novels'][0]['Pages']+"<br>");
+document.writeln("-----------------------</br>");
+document.writeln("The Title ID is :"+Authors['Novels'][1]['TitleId']+"<br>");
+document.writeln("The Title Name is :"+Authors['Novels'][1]['Title']+"<br>");
+document.writeln("The Publisher is :"+Authors['Novels'][1]['Publisher']+"<br>");
+document.writeln("The Price is "+Authors['Novels'][1]['Price']+"<br>");
+document.writeln("The Pages it has : "+Authors['Novels'][1]['Pages']+"<br>");
+document.writeln("-----------------------</br>");
+document.writeln("The Title ID is :"+Authors['Novels'][2]['TitleId']+"<br>");
+document.writeln("The Title Name is :"+Authors['Novels'][2]['Title']+"<br>");
+document.writeln("The Publisher is :"+Authors['Novels'][2]['Publisher']+"<br>");
+document.writeln("The Price is "+Authors['Novels'][2]['Price']+"<br>");
+document.writeln("The Pages it has : "+Authors['Novels'][2]['Pages']+"<br>");
+document.writeln("-----------------------</br>");*/
+for(var i=0;i<3;i++)
+{
+document.writeln("The Title ID is :"+Authors['Novels'][i]['TitleId']+"<br>");
+document.writeln("The Title Name is :"+Authors['Novels'][i]['Title']+"<br>");
+document.writeln("The Publisher is :"+Authors['Novels'][i]['Publisher']+"<br>");
+document.writeln("The Price is "+Authors['Novels'][i]['Price']+"<br>");
+document.writeln("The Pages it has : "+Authors['Novels'][i]['Pages']+"<br>");
+document.writeln("-----------------------</br>");
+
+}
+
+
+</script>
+</html>

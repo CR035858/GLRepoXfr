@@ -1,0 +1,111 @@
+<html>
+<head>
+<script language="javascript">
+function dispCountry()
+{
+var myCountry=document.getElementById('country').value;
+if(myCountry=="Ind")
+{
+alert("You Selected India");
+}
+else if(myCountry=="Pak")
+{
+alert("You Selected Pakistan");
+}
+else if(myCountry=="Sri")
+{
+alert("You Selected SriLanka");
+}
+else
+{
+alert("You Selected Nepal");
+}
+}
+function dispOccu()
+{
+var govt=document.getElementById('c1');
+var pvt=document.getElementById('c2');
+var quasi=document.getElementById('c3');
+
+if( (govt.checked == true) && (pvt.checked==true))
+{
+alert("You selected Govt and Private");
+}
+else if((govt.checked == true) && (pvt.checked==true) && (quasi.checked ==true))
+{
+alert("You selected Govt,Private and Quasi");
+}
+else if((pvt.checked==true) && (quasi.checked ==true))
+{
+alert("You selected Private and Quasi");
+}
+else if(pvt.checked==true)
+{
+alert("You selected Private");
+}
+else if(quasi.checked ==true)
+{
+alert("You selected Quasi");
+}
+else if(govt.checked == true)
+{
+alert("You selected Govt");
+}
+else
+{
+alert("You did'nt select");
+}
+}
+function dispAge()
+{
+var myRadio1=document.getElementById('r1');
+var myRadio2=document.getElementById('r2');
+var myRadio3=document.getElementById('r3');
+
+if(myRadio1.checked == true)
+{
+alert("You Fall in the Age Group of 10 - 20");
+}
+else if(myRadio2.checked == true)
+{
+alert("You Fall in the Age Group of 21 - 30");
+}
+else
+{
+alert("You Fall in the Age Group of 31 - 40");
+}
+}
+</script>
+</head>
+<body>
+<center>
+<table bgcolor="yellow" border="3" bordercolor="red">
+<tr>
+<td>Select Age Group</td>
+<td></td>
+</tr>
+
+<tr><td>10-20</td><td><input type="radio" id="r1" name="rad1" /></td></tr>
+<tr><td>21-30</td><td><input type="radio" id="r2" name="rad1" /></td></tr>
+<tr><td>31-40</td><td><input type="radio" id="r3" name="rad1" /></td></tr>
+
+<tr><td>Govt<input type="checkbox" id="c1" /></td><td>Pvt<input type="checkbox" id="c2"/></td></tr>
+<tr><td>Quasi<input type="checkbox" id="c3"/></td><td>
+<select id="country" >
+<option value="Ind">India</option>
+<option value="Pak">Pakistan</option>
+<option value="Sri">SriLanka</option>
+<option value="Nep">Nepal</option>
+</select>
+
+</td></tr>
+<tr><td><input type="submit" value="getAge" id="s1" onClick="dispAge()" /></td><td>
+<input type="submit" value="getCountry" id="s2" onClick="dispCountry()" />
+</td></tr>
+<tr><td><input type="submit" value="getOccupation" id="s1" onClick="dispOccu()" /></td><td>
+
+</td></tr>
+</table>
+</center>
+</body>
+</html>

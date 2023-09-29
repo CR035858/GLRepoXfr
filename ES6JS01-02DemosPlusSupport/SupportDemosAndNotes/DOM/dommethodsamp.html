@@ -1,0 +1,37 @@
+<html>
+<head>
+<script language="javascript">
+function dispDate()
+{
+//Created Date Object
+var myDate=new Date();
+//Created variable to store Date in String format
+var myDateStr=myDate.toLocaleString();
+
+//create a new node with date as value
+var mynode=document.createTextNode(myDateStr);
+
+
+//getting the paragraph object
+var myp=document.getElementById('mypara');
+
+//removing child node
+myp.removeChild(myp.firstChild);
+/*
+var nodeToBeRemoved=myp.firstChild;
+myp.removeChild(nodeToBeRemoved);
+*/
+//append the childnode to paragraph object with the created new node
+myp.appendChild(mynode);
+
+}
+</script>
+</head>
+<body>
+<center><h2>DOM Methods Usage</h2>
+<p id="mypara">
+Current Date
+</p>
+<input type="submit" value="PutDate" id="sub1" onClick="dispDate()" />
+</body>
+</html>

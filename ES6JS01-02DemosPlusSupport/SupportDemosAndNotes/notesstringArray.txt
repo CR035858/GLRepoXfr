@@ -1,0 +1,63 @@
+
+String://substr(),split,charAt(),toUpperCase(),toLowerCase()
+Array:length,join()
+
+-------------------------------
+charCodeAt()--this return ascii value for a character or starting character of a string
+fromCharCode--return a character when ascii value is supplied
+
+-----------------
+slice(x)-starts from 01,2,3....
+slice(y)-starts from 1,2,34,5....
+advantage of slice over substr is 
+slice can start from end starting from 0,-1,-2,-3....
+----------------------------------
+
+myarray=new Array(5);
+
+myarray[0]=This
+myarray[1]=is
+myarray[2]=a
+myarray[3]=sample
+
+var str1=myarray.join(':');
+
+str1
+This:is:a:sample
+
+str='amorphophelous'
+str.substr(2)----orphophelous
+str.substr(2,5)--orpho
+------------
+
+
+var arr=str1.split(:)
+
+
+
+str.substring(2,5)--orph
+str.substr
+
+
+
+
+str=this:for,is,a,sample
+
+var arr1=str.split(,)
+
+arr1[0]  will display this:for
+arr[1]       is
+arr[2] a
+
+
+
+
+
+
+------------------------------------------
+
+function myfunction()
+{
+
+
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+<script language="javascript">
+function add()
+{
+var num1=document.getElementById('t1').value;
+var num2=document.getElementById('t2').value;
+var res=parseInt(num1) + parseInt(num2);
+var resulttext=document.getElementById('result');
+resulttext.value=res;
+}
+function multi()
+{
+var num1=document.getElementById('t1').value;
+var num2=document.getElementById('t2').value;
+var prod=num1 * num2;
+var resulttext=document.getElementById('result');
+resulttext.value=prod;
+}
+function divide()
+{
+var num1=document.getElementById('t1').value;
+var num2=document.getElementById('t2').value;
+var divs=num1 / num2;
+var resulttext=document.getElementById('result');
+resulttext.value=divs;
+}
+</script>
+</head>
+<body>
+<center><h2>Calculator</h2></center></br></br>
+<center>
+<table border="3" bordercolor="green">
+<tr>
+<td>Enter first Number:</td>
+<td><input type="text" id="t1" /></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Enter Second Number:</td>
+<td><input type="text" id="t2" /></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="add" id="s1" onClick="add()" /></td>
+<td><input type="submit" value="mul" id="s2" onClick="multi()" /></td>
+<td><input type="submit" value="divide" id="s3" onClick="divide()" /></td>
+<td><input type="submit" value="reset" id="r1"  /></td>
+</tr>
+
+<tr>
+<td>Result Is:</td><td><input type="text" id="result" /></td><td></td><td></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

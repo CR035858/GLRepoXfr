@@ -1,0 +1,72 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+	window.load=initialize;
+	function initialize()
+	{
+		displayCount();
+		display();
+		
+	}
+	function saveData()
+	{
+	var myKey=document.getElementById('keyText').value;
+	var myValue=document.getElementById('valueText').value;
+	localStorage.setItem(myKey,myValue);
+	display();
+	displayCount();
+	}
+	function display()
+	{
+	var varCount=localStorage.length;
+	var myKeyName;
+	var myValue;
+	var myOl=document.getElementById('localData');
+		myOl.innerHTML="";
+		for(var i=0;i<varCount;i++)
+		{
+			myKeyName=localStorage.key(i);
+			myValue=localStorage.getItem(myKeyName);
+			var myli=document.createElement("li");
+			myli.innerHTML="Key :"+myKeyName+" Value :"+myValue +
+			"<button onclick='deleteElement(\""+myKeyName+"\")'>Delete</button>";
+			myOl.appendChild(myli);
+		}
+		
+	}
+	function deleteElement(key)
+	{
+	localStorage.removeItem(key);
+	displayCount();
+	display();
+	}
+	function displayCount()
+	{
+		var mySpan=document.getElementById('localCount');
+		var myVarCount=localStorage.length;
+		mySpan.innerHTML="Totally "+myVarCount+" Objects available in Local Storage";
+	
+	}
+	
+	</script>
+</head>
+	<body>
+	<div>
+	<section>
+		<h1>Input Section</h1>
+		<label for="keyText">Enter Key</label>
+		<input type="text" id="keyText" />
+		<label for="valueText">Enter Value </label>
+		<input type="text" id="valueText" />
+		<button id="storeId" onclick="saveData()">
+			Save
+		</button>
+	</section>
+	<section>
+		<h1>Output Section</h1>
+		<span id="localCount">Count</span>
+		<ol id="localData"></ol>
+	</section>
+	</div>
+	</body>
+</html>

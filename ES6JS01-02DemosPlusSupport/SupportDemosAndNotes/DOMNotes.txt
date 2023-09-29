@@ -1,0 +1,92 @@
+Document Object Model:
+	Facilitates one to Parse,  Create , Edit, Manage and manipulate the Documents.
+	Documents could be both of the XML & HTML type.
+	According to DOM every document is considered as a Node and all the subelements
+	and contents form the content nodes.
+	DOM provides mechanism to navigate through the nodes and manipulate the same 
+	and also it provides a mechanism by which one can process/parse the documents
+	one finds DOM most significant with the XML , as whenever communication between
+	web applications(web services) take place it would be in the XML format, 	therefore a web app developeed on any technology needs to process the contents
+	which usually would be in XML/JSON , then DOM comes as a handy tool with methods
+	and classes to do the same.
+	DOM provides methods to create nodes/delete nodes/insert nodes etc.
+	in short DOM helps in parsing as well as generating html/XML documents.			
+
+			Node Types
+
+	Element
+	Attribute
+	Text
+	Comment
+	Document
+	
+	DocumentType
+
+			Node Object properties
+
+	nodeName
+	nodeValue
+	nodeType
+	parentNode
+	childNodes
+	firstChild
+	lastChild
+	previousSibling
+	nextSibling
+	attributes
+
+			Node Object Methods
+
+	appendChild(newchild)
+	hasChildNodes()
+	insertBefore(new,ref)   insert(area,street)
+	removeChild(old)
+	replaceChild(old,new)
+
+<Address>
+     <City>
+	<area>
+     <Street>
+
+		document.createElement(' ')
+		document.createTextNode("  ")
+<Employee id="e1'>
+	<empname >raju</empname>
+</Employee>
+
+---------------------
+<Employee id="e1">
+<empName>raju</empName>
+
+</Employee> 
+--var empName=document.createElement('empName')
+ var myElement=document.getElementById('e1')
+
+myElement.appendChild(empName)
+
+var myText=document.createTextNode("raju");
+var obj2=document.getElementById('e1')
+var obj2=document.getElementByName('empName')
+document.getElementByTag
+obj2.appendChild(myText)
+
+<Employee>
+   <empName id="e2">Raju</empName>
+</Employee>
+
+
+
+
+
+
+
+var obj2=document.getElementById('e2')
+
+obj2.appendChild(myText)
+
+
+
+
+
+
+

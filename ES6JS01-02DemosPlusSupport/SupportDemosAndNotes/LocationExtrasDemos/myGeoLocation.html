@@ -1,0 +1,29 @@
+<html>
+	<head><!-- myGeoLocation.html -->
+		<script type="text/javascript" language="javascript">
+		function getLocation()
+		{
+		navigator.geolocation.getCurrentPosition(showPosition)
+		}
+		function showPosition(position)
+		{
+			var myLatitude=position.coords.latitude;
+			var myLongitude=position.coords.longitude;
+			var myDiv=document.getElementById('div2');
+			myDiv.innerHTML="Latitude is "+myLatitude;
+			myDiv.innerHTML+="And Longitude is "+myLongitude;
+		}
+		</script>
+	</head>
+	<body bgcolor="aqua">
+		<div id="div1" style="border:2px green solid;float:left;width:100;height:100;">
+			<button id="locButton" onclick="getLocation()" >
+			Get Location
+			</button>
+		</div>
+		<div div id="div2" style="border:2px green solid;float:right;width:600;height:100;">
+
+		
+		</div>
+	</body>
+</html>

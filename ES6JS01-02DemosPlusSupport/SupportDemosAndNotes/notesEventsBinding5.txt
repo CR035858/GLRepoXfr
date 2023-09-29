@@ -1,0 +1,123 @@
+<html>
+<script>
+function dispDetails()
+
+//SNIPPET to understand
+<html>
+<script>
+var button1=document.getElementById('sub1')
+button1.onclick=method2;
+
+
+
+
+
+addEvent(sub1,'click',method1);
+
+
+
+</script>
+<body>
+<input type="submit" id="sub2" value="pleaseclick" onClick="dispDetails()" />
+<input type="submit" id="sub1" value="can click" />
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+{
+
+}		
+</script>
+<body>
+<form >
+
+<input type="submit" id="sub1" value="SubmitData" onClick="dispDetails()" />
+
+</form>
+</body>
+-------------------------------------------
+
+addEvent(window,click,dispDetails);
+
+addEvent(button,'click',dispDetails);
+----------------------------------------------------------
+document.getElementById()
+document.getElementByname()
+document.getElementByTag('p')
+
+
+
+----------------------------------
+<html>
+<script>
+var str1;
+str1=document.getElementById('text1').value;
+str1.value;
+
+
+</script>
+<body>
+Enter name:<input type="textbox" name="t1" id="text1"/>
+Enter Address:<input type="textbox" name="t2" id="text2"/>
+
+<p id="p1">
+
+</p>
+--------------------------
+
+var mybutton;
+mybutton=document.getElementById("button1")
+
+mybutton.onclick=function1;
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

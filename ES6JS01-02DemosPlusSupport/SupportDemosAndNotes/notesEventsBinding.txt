@@ -1,0 +1,160 @@
+<html>
+<script>
+function dispDetails()
+
+//SNIPPET to understand
+<html>
+<script>
+var button1=document.getElementById('sub1')
+button1.onclick=method2;
+
+var radobj=document.getElementById('r1');
+
+
+var checkobj=document.getElementById('c1');
+if(checkobj.checked == true)
+{
+
+}
+
+if(radobj.checked==true)
+{
+
+
+}
+
+
+radobj.oncheck=method2;
+or
+
+addEvent(sub1,'click',method1);//User Defined Method
+
+sub1.addEventListener(click,method1,false)//system defined method
+EventPropagation :false
+addEvent(r1,'check',method2);
+
+</script>
+<body>
+<input type="submit" id="sub2" value="pleaseclick" onClick="dispDetails()" />
+<input type="submit" id="sub1" value="can click" />
+
+<input type="radio" id="r1" name="r1" onCheck="method2()"/>
+
+<input type="checkbox" id="c1" name="c1" onCheck="method3()" />
+
+<p id="p1" ></p>
+<p id="p2" ></p>
+<p id="p3" ></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+{
+
+}		
+</script>
+<body>
+<form >
+
+<input type="submit" id="sub1" value="SubmitData" onClick="dispDetails()" />
+
+</form>
+</body>
+-------------------------------------------
+
+addEvent(window,click,dispDetails);
+
+addEvent(button,'click',dispDetails);
+----------------------------------------------------------
+document.getElementById()
+document.getElementByname()
+document.getElementByTag('p')
+
+
+
+----------------------------------
+<html>
+<script>
+var str1;
+str1=document.getElementById('text1').value;
+str1.value;
+
+
+</script>
+<body>
+Enter name:<input type="textbox" name="t1" id="text1"/>
+Enter Address:<input type="textbox" name="t2" id="text2"/>
+
+<p id="p1">
+
+</p>
+--------------------------
+
+var mybutton;
+mybutton=document.getElementById("button1")
+
+mybutton.onclick=function1;
+-----------------------
+
+var obj=getElementById('id1');
+obj.onCheck=talk;
+
+addEvent(sub1,'click',method1);
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+-------------------
+
+
+<input type="submit" id="sub1" onClick="disp()" />
+
+sub1.onclick=disp;
+
+addEvent(sub1,'click',disp)
+-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

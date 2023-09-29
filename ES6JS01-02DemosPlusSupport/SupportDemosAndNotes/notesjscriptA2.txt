@@ -1,0 +1,26 @@
+Javascript or for that matter any scripting revolves around three basic components
+	     User Defined
+	    /
+a) Functions/--Event Handlers
+	  \
+	   \System Defined (Math.pow/String.substr/String.substring(etc)
+
+	 DocumentBased(HTML/h1/table/form/textbox/combobox etc......
+	/
+b) Objects/--- BOM-Screen/History/Document... etc
+                  \
+	\
+	System defined- Number/Date/String/Math
+
+
+c) Events---For Eg.MouseMove/Click/Scroll/Drag&Drop/KeyPress/MouseDown/Mouseout.etc....
+Functions are building blocks which have some definitions which could be reused
+Objects are components on which the actions(Events ) are to be performed
+which could be predefined Datatypes(like String,Math,Number,Date,var etc) or Controls which are part of Documents like(ComboBox,textBox,Button,ListBox etc)
+Events are the actions which invoke a prticular functionality which are again user defined or System Defined.
+---------------------------------------------------------------------------------------
+
+
+
+		FUNCTIONS
+like
